@@ -1,15 +1,14 @@
-import React, { useContext } from 'react';
 import { CgDarkMode } from 'react-icons/cg';
 import { BiLogOutCircle } from 'react-icons/bi';
 import { MdWallpaper } from 'react-icons/md';
-// import { signOut } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 import { BsGithub } from 'react-icons/bs';
-import { UserDataContext } from '../../config/UserData/storage';
-// import { auth } from '../../config/firebase';
+
+import { useRecoilState } from 'recoil';
+import { darkModeState } from '../../state/recoil';
 
 function Settings() {
-  const { UserData, setUserData } = useContext(UserDataContext);
+  const [darkMode, setDarkMode] = useRecoilState(darkModeState);
   return (
     <div className="absolute bg-base-100 top-0 left-0 h-full w-full">
       <div className="text-center mt-10 text-xl p-4 font-bold">Settings</div>
@@ -23,12 +22,8 @@ function Settings() {
             <input
               type="checkbox"
               className="toggle"
-              onChange={() => {
-                setUserData((prev) => ({
-                  ...prev, darkmode: !UserData.darkmode,
-                }));
-              }}
-              defaultChecked={UserData.darkmode}
+              onChange={() => setDarkMode(!darkMode)}
+              checked={darkMode}
             />
           </span>
         </li>

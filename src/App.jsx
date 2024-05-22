@@ -5,19 +5,18 @@ import { useRoutes } from 'react-router-dom';
 // import { AuthContextProvider } from './config/Auth/context';
 import Layout from './config/Layout/Layout';
 import routesConfig from './config/routes';
-import { UserDataProvider } from './config/UserData/storage';
+// import { UserDataProvider } from './config/UserData/storage';
+import { RecoilRoot } from 'recoil';
 
 function App() {
   const routes = useRoutes(routesConfig);
   return (
     <>
-      <UserDataProvider>
+      <RecoilRoot>
         <Layout>
-          {/* <AuthContextProvider> */}
             {routes}
-          {/* </AuthContextProvider> */}
         </Layout>
-      </UserDataProvider>
+      </RecoilRoot>
     </>
   );
 }

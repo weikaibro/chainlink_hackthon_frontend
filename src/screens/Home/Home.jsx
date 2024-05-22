@@ -1,7 +1,6 @@
 import moment from 'moment';
-import React, { useContext } from 'react';
+// import React, { useContext } from 'react';
 import { BsGithub } from 'react-icons/bs';
-
 // import { AuthContext } from '../../config/Auth/context';
 
 function Home() {
