@@ -108,10 +108,10 @@ const routesConfig = [
     //   path: '/weather',
     //   element: <Weather />,
     // },
-    // {
-    //   path: '/calculator',
-    //   element: <Calculator />,
-    // },
+    {
+      path: '/calculator',
+      element: <Calculator />,
+    },
     // {
     //   path: '/notes',
     //   element: <Notes />,
