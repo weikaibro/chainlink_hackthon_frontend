@@ -9,6 +9,9 @@ import Home from '../screens/Home/Home';
 // import Note from '../screens/Pages/Notes/components/Note';
 // import Notes from '../screens/Pages/Notes/Notes';
 // import Weather from '../screens/Pages/Weather/Weather';
+import Mail from '../screens/Pages/Mail/mail';
+import News from '../screens/Pages/News/news';
+import Text from '../screens/Pages/Text/text';
 import Settings from '../screens/Settings/Settings';
 // import Protected from './Auth/Protected';
 // import Wallpaper from '../screens/Settings/Wallpaper/Wallpaper';
@@ -101,17 +104,31 @@ const routesConfig = [
       ],
     },
     {
-      path: '/apps',
-      element: <Apps />,
+      path: '/pages',
+      // element: <Pages />,
+      children: [
+        {
+          path: 'Mail/mail',
+          element: <Mail />,
+        },
+        {
+          path: 'News/news',
+          element: <News />,
+        },
+        {
+          path: 'Text/text',
+          element: <Text />,
+        },
+      ],
     },
     // {
     //   path: '/weather',
     //   element: <Weather />,
     // },
-    {
-      path: '/calculator',
-      element: <Calculator />,
-    },
+    // {
+    //   path: '/calculator',
+    //   element: <Calculator />,
+    // },
     // {
     //   path: '/notes',
     //   element: <Notes />,
