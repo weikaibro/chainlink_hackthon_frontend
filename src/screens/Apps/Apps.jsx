@@ -7,28 +7,28 @@ function Apps() {
       <Link to="/exchange">
         <div className="avatar">
           <div className="w-16 mask mask-squircle">
-            <img src="/assets/images/weather-app.jpg" alt="weather App" />
+            <img src="/assets/images/weather-app.jpg" alt="Exchange App" />
           </div>
         </div>
       </Link>
       <Link to="/mail">
         <div className="avatar">
           <div className="w-16 mask mask-squircle">
-            <img src="/assets/images/calculator.png" alt="Calculator App" />
+            <img src="/assets/images/calculator.png" alt="Mail App" />
           </div>
         </div>
       </Link>
       <Link to="/text">
         <div className="avatar">
           <div className="w-16 mask mask-squircle">
-            <img src="/assets/images/notes.jpg" alt="Notes App" />
+            <img src="/assets/images/notes.jpg" alt="Text App" />
           </div>
         </div>
       </Link>
       <Link to="/news">
         <div className="avatar">
           <div className="w-16 mask mask-squircle">
-            <img src="/assets/images/funny.jpg" alt="Jokes App" />
+            <img src="/assets/images/funny.jpg" alt="News App" />
           </div>
         </div>
       </Link>
