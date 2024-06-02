@@ -27,7 +27,7 @@ const routesConfig = [
       element: <Apps />,
       children: [
         {
-          path: 'exchange',
+          path: '/apps/exchange',
           element: <Exchange />,
         },
         {
