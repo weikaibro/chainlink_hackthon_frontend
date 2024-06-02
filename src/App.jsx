@@ -78,7 +78,7 @@ function App() {
     <>
       <RecoilRoot>
         <Layout>
-            {routes}
+          {routes}
         </Layout>
       </RecoilRoot>
     </>
