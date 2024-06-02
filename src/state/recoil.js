@@ -2,7 +2,7 @@ import { atom } from 'recoil';
 
 export const darkModeState = atom({
   key: 'darkModeState',
-  default: true,
+  default: false,
 });
 
 export const walletAccount = atom({

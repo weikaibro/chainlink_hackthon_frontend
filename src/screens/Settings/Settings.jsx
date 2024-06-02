@@ -8,7 +8,7 @@ import { useRecoilState } from 'recoil';
 import { darkModeState } from '../../state/recoil';
 
 function Settings() {
-  const [darkMode, setDarkMode] = useRecoilState(darkModeState);
+  // const [darkMode, setDarkMode] = useRecoilState(darkModeState);
   return (
     <div className="absolute bg-base-100 top-0 left-0 h-full w-full">
       <div className="text-center mt-10 text-xl p-4 font-bold">Settings</div>
@@ -22,8 +22,8 @@ function Settings() {
             <input
               type="checkbox"
               className="toggle"
-              onChange={() => setDarkMode(!darkMode)}
-              checked={darkMode}
+              // onChange={() => setDarkMode(!darkMode)}
+              // checked={darkMode}
             />
           </span>
         </li>
