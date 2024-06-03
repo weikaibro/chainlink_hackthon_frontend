@@ -19,3 +19,8 @@ export const gameAdd = atom({
   key: 'gameAdd',
   default: "",
 });
+
+export const coinsState = atom({
+  key: 'coinsState',
+  default: false,
+});

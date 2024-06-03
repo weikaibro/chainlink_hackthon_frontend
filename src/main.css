@@ -74,3 +74,73 @@ html {
 .s1 {
   color: #000000;
 }
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* 調整這裡來改變按鈕的位置 */
+}
+
+.game-button {
+  background-color: #87CEEB;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px #999;
+  width: 200px;
+}
+
+.game-button:hover {
+  background-color: #5DADE2;
+}
+
+.game-button:active {
+  background-color: #5DADE2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.avatar {
+  margin-top: 20px;
+}
+
+.exchange-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.coins-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr; /* 設置兩列 */
+  grid-template-rows: 1fr 1fr; /* 設置兩行 */
+  height: 100%; /* 使網格高度填滿父容器 */
+  width: 100%; /* 使網格寬度填滿父容器 */
+}
+
+.coin-card {
+  background-color: #4682B4; /* 更改為淺藍色背景 */
+  border-radius: 0.5rem;
+  padding: 0.5rem; /* 調整內邊距以減少高度 */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 66%; /* 將高度調整為原來的2/3 */
+}
+
+.coin-card.lower {
+  align-self: flex-start; /* 將下方的幣種卡片上移更多 */
+  margin-top: -20px; /* 調整 margin-top 以進一步上移 */
+}
